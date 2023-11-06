@@ -88,8 +88,7 @@ table {
     position: absolute;
     overflow: clip;
     top: 0;
-    left: 0;
-    left: calc(100% - 550px);
+    left: calc(-137vh + 20vw);
 }
 
 
