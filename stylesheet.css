@@ -106,6 +106,8 @@ table {
 }
 .disclaimer-control>p{
     font-size: 18px;
+    margin-right: 10%;
+    text-align: justify;
 }
 .form-header{
     margin-top: 10%;
@@ -118,7 +120,7 @@ table {
     grid-template-columns: repeat(2,1fr);
     row-gap: 2rem;
     column-gap: 5rem;
-    margin-bottom: 2rem;
+    margin-bottom: calc(2rem + 1.5vh);
 }
 input{
     background-color: black;
@@ -135,15 +137,13 @@ input:focus{
     box-shadow: 0 0 10px #821B84;
 }
 #btn-submit {
-    align-self: center;
-    align-items: center;
     border-radius: 15px;
     padding: 1rem 2rem;
     background-image: linear-gradient(to right, #470252 0%, #821B84  51%, #470252  100%);
     transition: 0.3s;
     background-size: 200% auto;
     color: white;
-    border: none;          
+    border: none;  
     display: block;
     cursor: pointer;
     transition-duration: 0.4s;
