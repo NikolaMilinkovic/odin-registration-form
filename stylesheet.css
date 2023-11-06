@@ -81,14 +81,11 @@ table {
     grid-area: stack;
 }
 .parallax>img{
-    /* object-position: calc(100% - 550px);
-    overflow: hidden;
-    height: 100vh; */
     height: 100vh;
     position: absolute;
     overflow: clip;
     top: 0;
-    left: calc(-137vh + 20vw);
+    left: calc(-135vh + 20vw);
 }
 
 
@@ -154,7 +151,6 @@ input:focus{
 }
 #btn-submit:hover {
     background-position: right center;
-    color: white;
     text-decoration: none;
     cursor: pointer;
 }
