@@ -56,7 +56,7 @@ table {
     overflow: clip;
 }
 .logo-container{
-    position: absolute;
+    position: relative;
     width: 40vw;
     height: 100vh;
 }
@@ -81,9 +81,15 @@ table {
     grid-area: stack;
 }
 .parallax>img{
-    object-position: -550px;
+    /* object-position: calc(100% - 550px);
     overflow: hidden;
+    height: 100vh; */
     height: 100vh;
+    position: absolute;
+    overflow: clip;
+    top: 0;
+    left: 0;
+    left: calc(100% - 550px);
 }
 
 
@@ -121,7 +127,10 @@ table {
 input{
     background-color: black;
     color: white;
-    border: 1px solid #7f0592;
+    border: none;
+    outline: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid #7f0592;
     font-size: 16px;
 }
 input:focus{
@@ -134,14 +143,15 @@ input:focus{
     align-items: center;
     border-radius: 15px;
     padding: 1rem 2rem;
-    min-width: 15%;
-    max-width: 20%;
     background-image: linear-gradient(to right, #470252 0%, #821B84  51%, #470252  100%);
     transition: 0.3s;
     background-size: 200% auto;
     color: white;
     border: none;          
     display: block;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    min-width: 250px;
 }
 #btn-submit:hover {
     background-position: right center;
@@ -150,7 +160,7 @@ input:focus{
     cursor: pointer;
 }
 #btn-submit:active{
-    animation: btn-submit 0.4s ease-in-out;
+    animation: btn-submit 0.15s ease-in-out;
 }
 input::placeholder{
     font-size: 14px;
@@ -162,6 +172,38 @@ input::placeholder{
         transform: scale(1);
     }
     to{
-        transform: scale(0.90);
+        transform: scale(0.95);
     }
+}
+
+.btn-container{
+    display: inline-block;
+    position: relative;
+}
+button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 20px #821B84;
+    border-radius: 15px;
+  }
+  
+  button:active:after {
+    box-shadow: 0 0 0 0 #821B84;
+    border-radius: 15px;
+    position: absolute;
+    left: 0;
+    top:0;
+    opacity: 1;
+    transition: 0s;
+  }
+  
+ button:active {
+    top: 1px;
   }
