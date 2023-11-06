@@ -90,7 +90,7 @@ table {
 
 
 
-/* Form Container */
+/* Form Container and all its children */
 
 .form-container{
     left: 40%;
@@ -136,6 +136,14 @@ input:focus{
     border: 1px solid #aa06c4;
     box-shadow: 0 0 10px #821B84;
 }
+input::placeholder{
+    font-size: 14px;
+    color: #ce0c9d;
+}
+input:-webkit-autofill{
+    -webkit-text-fill-color: white;   
+    -webkit-background-clip: text;
+}
 #btn-submit {
     border-radius: 15px;
     padding: 1rem 2rem;
@@ -157,11 +165,6 @@ input:focus{
 #btn-submit:active{
     animation: btn-submit 0.15s ease-in-out;
 }
-input::placeholder{
-    font-size: 14px;
-    color: #ce0c9d;
-}
-
 @keyframes btn-submit {
     from{
         transform: scale(1);
@@ -170,7 +173,6 @@ input::placeholder{
         transform: scale(0.95);
     }
 }
-
 .btn-container{
     display: inline-block;
     position: relative;
@@ -187,9 +189,8 @@ button:after {
     transition: all 0.5s;
     box-shadow: 0 0 10px 20px #821B84;
     border-radius: 15px;
-  }
-  
-  button:active:after {
+}
+button:active:after {
     box-shadow: 0 0 0 0 #821B84;
     border-radius: 15px;
     position: absolute;
@@ -197,8 +198,8 @@ button:after {
     top:0;
     opacity: 1;
     transition: 0s;
-  }
+}
   
- button:active {
+button:active {
     top: 1px;
-  }
+}
