@@ -270,26 +270,10 @@ button:active:after {
         margin-bottom: calc(2rem + 1.5vh);
     }
     #btn-submit {
-        border-radius: 15px;
         padding: 0.7rem 1.3rem;
-        background-image: linear-gradient(to right, #470252 0%, #821B84  51%, #470252  100%);
-        transition: 0.3s;
-        background-size: 200% auto;
-        color: white;
-        border: none;  
-        display: block;
-        cursor: pointer;
-        transition-duration: 0.4s;
         min-width: 150px;
     }
     input{
-        background-color: black;
-        color: white;
-        border: none;
-        outline: none;
-        border-top: 1px solid black;
-        border-bottom: 1px solid #7f0592;
-        font-size: 16px;
         width: 100%;
     }
 }
