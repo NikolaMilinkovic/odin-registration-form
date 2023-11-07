@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./javascript.js"></script>
+    <script src="./javascript.js" defer></script>
     <link rel="stylesheet" href="./stylesheet.css">
     <title>Odin-Form-Practice</title>
 </head>
@@ -12,13 +12,16 @@
 <body>
     <div class="main-container">
         <div class="parallax">
-            <img src="./Vectors/Asset 1.png" alt="background" class="img-1 img-settings">
-            <img src="./Vectors/Asset 2.png" alt="windows" class="img-2 img-settings">
-            <img src="./Vectors/Asset 3.png" alt="buildings middle" class="img-3 img-settings">
-            <img src="./Vectors/Asset 4.png" alt="buildings side" class="img-4 img-settings">
-            <img src="./Vectors/Asset 5.png" alt="buildings far side" class="img-5 img-settings">
-            <img src="./Vectors/Asset 6.png" alt="railings" class="img-6 img-settings">
-            <img src="./Vectors/Asset 7.png" alt="couple" class="img-7 img-settings">
+            
+            <img src="./Vectors/Asset 1.png" alt="background" class="img-1 img-background">
+
+            <img src="./Vectors/Asset 2.png" alt="windows" class="img-2 img-buildings" data-speed-x="0.02" data-speed-y="0.01">
+            <img src="./Vectors/Asset 3.png" alt="buildings middle" class="img-3 img-buildings" data-speed-x="0.01" data-speed-y="0.02">
+            <img src="./Vectors/Asset 4.png" alt="buildings side" class="img-4 img-buildings" data-speed-x="0.02" data-speed-y="0.01">
+            <img src="./Vectors/Asset 5.png" alt="buildings far side" class="img-5 img-buildings" data-speed-x="0.01" data-speed-y="0.02">
+
+            <img src="./Vectors/Asset 6.png" alt="railings" class="img-6 img-buildings2">
+            <img src="./Vectors/Asset 7.png" alt="couple" class="img-7 img-couple">
         </div>
         <div class="logo-container">
             <div class="hero-container">
@@ -27,13 +30,14 @@
         </div>
         <div class="form-container">
             <div class="form-container-content">
-                <form action=""></form>
+                <form action="" method="post">
                 <div class="disclaimer-control">
                     <p class="disclaimer">This is not a real online service!</p>
                     </br>
-                    <p class="disclaimer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis
-                        corporis error a harum voluptatum similique ipsa aspernatur dolores. Veritatis similique placeat
-                        possimus cumque consequatur ipsam corporis accusamus ipsum repudiandae totam.</p>
+                    <p class="disclaimer">As you may have assumed so far this page is just a mockup page. A simple practice page
+                        if you will. Point of this small one page project was to learn placing vectors on my wepage
+                        and create the parallex effect. This was a very good learning experience. I hope you like this
+                        little project of mine!</p>
                 </div>
                     <h1 class="form-header">Lets get started!</h1>
                     <fieldset class="input-fieldset">
@@ -42,7 +46,7 @@
                         <input type="email" id="email" placeholder="* E-mail" required>
                         <input type="text" id="phone-number" placeholder="* Phone number" required>
                         <input type="password" id="password" placeholder="* Password" required>
-                        <input type="password" id="password" placeholder="* Repeat Password" required>
+                        <input type="password" id="repeat-password" placeholder="* Repeat Password" required>
                     </fieldset>
                     <div class="btn-container">
                         <button type="submit" id="btn-submit">Create Account</button>
