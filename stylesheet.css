@@ -226,7 +226,7 @@ button:active:after {
     transition: 0s;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) and (orientation: portrait){
 
     /* 
         Hero text    
@@ -278,5 +278,61 @@ button:active:after {
     input{
         width: 100%;
     }
+}
+
+@media screen and (min-width: 600px) and (orientation: landscape){
+
+    /* 
+        Hero text    
+    */
+    .hero-container{
+        margin-top: 3rem;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 1rem;
+    }
+    .hero-container>h1{
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        font-size: 36px;
+    }
+
+    /* 
+        Form section
+    */
+    .form-container-content{
+        margin: 1.5rem;
+    }
+    .disclaimer-control>p{
+        margin-right: 0px;
+    }
+    .form-header{
+        margin-top: calc(10% + 1vh);
+        /* font-size: 36px; */
+        font-size: calc(1.5vw + 1.5vh + 1vmin);
+    }
+
+    /* 
+        Input fieldset section
+    */
+
+    .input-fieldset{
+        margin-top: 5vh;
+        margin-right: 0%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-bottom: calc(2rem + 1.5vh);
+        row-gap: 5vh;
+        column-gap: 5rem;
+        margin-bottom: 7vh;
+    }
+    #btn-submit {
+        padding: 0.7rem 1.3rem;
+        min-width: 150px;
+    }
+    input{
+        width: 100%;
+    }
+
 }
 
