@@ -264,10 +264,12 @@ button:active:after {
 
     .input-fieldset{
         margin-top: 3rem;
-        margin-right: 10%;
+        margin-right: 0%;
         display: grid;
         grid-template-columns: repeat(1,1fr);
         margin-bottom: calc(2rem + 1.5vh);
+        row-gap: 5vh;
+        column-gap: 5rem;
     }
     #btn-submit {
         padding: 0.7rem 1.3rem;
