@@ -117,7 +117,8 @@ img.img-couple{
     margin-right: 10%;
 }
 .disclaimer-control>p{
-    font-size: 18px;
+    font-size: calc(1vw + 1vh + 0.2vmin);
+    /* font-size: 18px; */
     margin-right: 10%;
     text-align: justify;
 }
@@ -224,3 +225,72 @@ button:active:after {
     opacity: 1;
     transition: 0s;
 }
+
+@media screen and (max-width: 600px){
+
+    /* 
+        Hero text    
+    */
+    .hero-container{
+        margin-top: 3rem;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 1rem;
+    }
+    .hero-container>h1{
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        font-size: 36px;
+    }
+
+    /* 
+        Form section
+    */
+    .form-container-content{
+        margin: 1.5rem;
+    }
+    .disclaimer-control>p{
+        margin-right: 0px;
+    }
+    .form-header{
+        margin-top: calc(10% + 1vh);
+        /* font-size: 36px; */
+        font-size: calc(1.5vw + 1.5vh + 1vmin);
+    }
+
+    /* 
+        Input fieldset section
+    */
+
+    .input-fieldset{
+        margin-top: 3rem;
+        margin-right: 10%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: calc(2rem + 1.5vh);
+    }
+    #btn-submit {
+        border-radius: 15px;
+        padding: 0.7rem 1.3rem;
+        background-image: linear-gradient(to right, #470252 0%, #821B84  51%, #470252  100%);
+        transition: 0.3s;
+        background-size: 200% auto;
+        color: white;
+        border: none;  
+        display: block;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        min-width: 150px;
+    }
+    input{
+        background-color: black;
+        color: white;
+        border: none;
+        outline: none;
+        border-top: 1px solid black;
+        border-bottom: 1px solid #7f0592;
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
