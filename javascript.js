@@ -5,6 +5,9 @@
 
     document.addEventListener("mousemove", moveBackground);
 
+    If (window.matchMedia("(max-width: 600px)").matches){
+        return;
+    }
     function moveBackground(e) {
         const centerX = body.offsetWidth / 2;
         const centerY = body.offsetHeight / 2;
