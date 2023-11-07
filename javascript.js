@@ -19,6 +19,8 @@
             const translateX = (mouseX - centerX) * factorX;
             const translateY = (mouseY - centerY) * factorY;
 
+            console.log(mouseX);
+            console.log(mouseY);
             // Apply translation and scaling
             element.style.transform = `translate(${translateX}px, ${translateY}px) scale(1.05)`;
         });
