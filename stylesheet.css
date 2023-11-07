@@ -307,7 +307,7 @@ button:active:after {
         margin-right: 0px;
     }
     .form-header{
-        margin-top: calc(10% + 1vh);
+        margin-top: calc(8% + 1vh);
         /* font-size: 36px; */
         font-size: calc(1.5vw + 1.5vh + 1vmin);
     }
