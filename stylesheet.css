@@ -117,7 +117,7 @@ img.img-couple{
     margin-right: 10%;
 }
 .disclaimer-control>p{
-    font-size: calc(1vw + 1vh + 0.2vmin);
+    font-size: calc(0.8vw + 0.8vh + 0.2vmin);
     /* font-size: 18px; */
     margin-right: 10%;
     text-align: justify;
